@@ -1,0 +1,33 @@
+.menu {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+    justify-content: center;
+}
+
+.menu-item {
+    max-width: 450px;
+}
+
+.dish-image{
+    width:100%;
+    max-height: 300px;
+}
+
+.dish-desc{
+    font-family: nunito;
+}
+
+.dish-title{
+    font-family: nunito-bold;
+}
+
+@font-face {
+    font-family: nunito;
+    src: url("../assets/fonts/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: nunito-bold;
+    src: url("../assets/fonts/NunitoSans-ExtraBold.ttf");
+}
