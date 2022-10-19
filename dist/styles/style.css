@@ -1,12 +1,31 @@
+::before, ::after{
+    border: 1px solid red;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+#content {
+    width: 100%;
+    color: white;
+    background-color: #854d0e;
+    /* opacity: .7; */
+}
+
 .menu {
     display: grid;
-    width: 100%;
     grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
     justify-content: center;
+    gap: 5em;
+    padding: 4em;
 }
 
 .menu-item {
     max-width: 450px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .dish-image{
@@ -20,6 +39,19 @@
 
 .dish-title{
     font-family: nunito-bold;
+}
+
+
+
+/* 
+@media (max-width: 500px){
+
+} */
+
+iframe{
+    margin-top: 10em;
+    width: 600px;
+    height: 450px;
 }
 
 @font-face {

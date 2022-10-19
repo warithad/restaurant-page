@@ -1,3 +1,3 @@
-import createMenu from './menu.js';
+import loadPage from './load';
 
-document.getElementById('content').appendChild(createMenu());
+loadPage();
