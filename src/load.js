@@ -1,5 +1,6 @@
-import loadContactMenu from './contact';
-import createMenu from './menu';
+import loadContact from './contact';
+import loadMenu from './menu';
+import loadHome from './home';
 
 function createHeader(){
     const header = document.createElement('div');
@@ -35,8 +36,16 @@ function createNav(){
     contactButton.textContent = 'Contact';
 
     contactButton.addEventListener('click', ()=>{
-        loadContactMenu();
-    })
+        loadContact();
+    });
+
+    menuButton.addEventListener('click', ()=>{
+        loadMenu();
+    });
+
+    homeButton.addEventListener('click', ()=>{
+        loadHome();
+    });
 
     const nav = document.createElement('div');
     nav.classList.add('nav');
@@ -51,7 +60,7 @@ function createFooter(){
     footer.classList.add('footer');
 
     const footerText = document.createElement('h3');
-    footerText.textContent = 'sadslfsdflsdf';
+    footerText.textContent = 'The Odin Project 2022';
     footerText.classList.add('footer-text');
 
     footer.appendChild(footerText);
@@ -67,7 +76,7 @@ function loadPage(){
     content.appendChild(createMain());
     content.appendChild(createFooter());
 
-    loadContactMenu();
+    loadHome();
 }
 
 export default loadPage;

@@ -15,6 +15,16 @@ const createMenu =()=>{
     return menu;
 }
 
+const loadMenu =()=> {
+    const main = document.getElementById('main');
+    const menu = createMenu();
+
+    if(main.hasChildNodes()){
+        main.removeChild(main.firstElementChild);
+    }
+    main.appendChild(menu);
+}
+
 function createDish(name, desc){
     const dishDiv = document.createElement('div');
     dishDiv.classList.add('menu-item');
@@ -37,4 +47,4 @@ function createDish(name, desc){
     return dishDiv;
 }
 
-export default createMenu;
+export default loadMenu;

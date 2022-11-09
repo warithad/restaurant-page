@@ -1,12 +1,23 @@
 
-const loadContactMenu =()=>{
-    const contact = document.createElement('main');
-    const f = createContactInfo();
-    const s = createMap();
+const loadContact =()=>{
+    const contactContainer = createContact();
+    
+    const main = document.getElementById('main');
+    if(main.hasChildNodes()){
+        main.removeChild(main.firstElementChild);
+    }
+    main.appendChild(contactContainer);
 
-    main.append(f, s);
+}
 
-    return main;
+const createContact = () => {
+    const info = createContactInfo();
+    const map = createMap();
+
+    const contactContainer = document.createElement('div');
+    contactContainer.append(info, map);
+
+    return contactContainer;
 }
 
 const createContactInfo =()=>{
@@ -55,4 +66,4 @@ const createMap =()=>{
 
 
 
-export default loadContactMenu;
+export default loadContact;
