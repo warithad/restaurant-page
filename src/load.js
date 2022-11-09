@@ -8,7 +8,7 @@ function createHeader(){
 
     const headerText = document.createElement('h1');
     headerText.classList.add('header-text');
-    headerText.textContent = 'Hello';
+    headerText.textContent = 'Hot Sauce Restaurant';
 
     header.appendChild(headerText);
 

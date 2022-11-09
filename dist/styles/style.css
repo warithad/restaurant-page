@@ -2,16 +2,63 @@
     border: 1px solid red;
 }
 
-body {
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0px;
+    border: 0px;
 }
 
 #content {
     width: 100%;
+    min-height: 100vh;
     color: white;
-    background-color: #854d0e;
+    background-color: #404040;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     /* opacity: .7; */
+}
+
+.header {
+    font-size: 3.5rem;
+    font-family: allura-cursive;
+}
+
+.nav {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav-button {
+    font-size: 3em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    background-color: #134e4a;
+    color: #fafafa;
+    font-family: sacramento;
+}
+
+.nav-button:hover {
+    background-color: #115e59;
+}
+
+#main {
+    
+}
+/* Home */
+.about-head{
+    font-size: 3rem;
+    font-family: nunito;
+    padding-left: 1em;
+}
+
+.about-text {
+    font-size: 1.5rem;
+    padding-left: 2em;
+    padding-right: 5em;
+    text-align-last: center;
+    font-family: nunito;
 }
 
 .menu {
@@ -54,6 +101,14 @@ iframe{
     height: 450px;
 }
 
+
+.footer {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    font-family: nunito-bold;
+    margin-top: 2em;
+}
+
 @font-face {
     font-family: nunito;
     src: url("../assets/fonts/NunitoSans-Regular.ttf");
@@ -62,4 +117,14 @@ iframe{
 @font-face {
     font-family: nunito-bold;
     src: url("../assets/fonts/NunitoSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: allura-cursive;
+    src: url("../assets/fonts/Allura-Regular.ttf");
+}
+
+@font-face {
+    font-family: sacramento;
+    src: url("../assets/fonts/Sacramento-Regular.ttf");
 }
