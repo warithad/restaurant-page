@@ -32,7 +32,7 @@ const createContactInfo =()=>{
     phoneImage.classList.add('icon');
 
     const phoneDiv = document.createElement('div');
-    phoneDiv.append(phoneImage, phoneImage);
+    phoneDiv.append(phoneImage, phoneNumber);
 
     const address = document.createElement('h3');
     address.textContent = '3 Isafsdfsd sadfsdfs dsfslfsdlfks0';
