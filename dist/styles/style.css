@@ -88,7 +88,20 @@
     font-family: nunito-bold;
 }
 
+/*contact*/
+.contact-container {
+    margin-top: 5em;
+}
 
+.contact-info {
+    font-family: nunito;
+    font-size: 1.5rem;
+}
+
+.contact-text {
+    display: flex;
+    gap: 1em;
+}
 
 /* 
 @media (max-width: 500px){
@@ -96,7 +109,7 @@
 } */
 
 iframe{
-    margin-top: 10em;
+    margin-top: 3em;
     width: 600px;
     height: 450px;
 }

@@ -15,6 +15,7 @@ const createContact = () => {
     const map = createMap();
 
     const contactContainer = document.createElement('div');
+    contactContainer.classList.add('contact-container');
     contactContainer.append(info, map);
 
     return contactContainer;
@@ -32,6 +33,7 @@ const createContactInfo =()=>{
     phoneImage.classList.add('icon');
 
     const phoneDiv = document.createElement('div');
+    phoneDiv.classList.add('contact-text');
     phoneDiv.append(phoneImage, phoneNumber);
 
     const address = document.createElement('h3');
@@ -42,6 +44,7 @@ const createContactInfo =()=>{
     addressImage.classList.add('icon');
 
     const addressDiv = document.createElement('div');
+    addressDiv.classList.add('contact-text');
     addressDiv.append(addressImage, address);
 
     contactInfo.append(phoneDiv, addressDiv);
